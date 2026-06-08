@@ -2007,8 +2007,13 @@ h6 {
 }
 
 .aj-header__nav {
+  display: none;
   align-items: center;
   gap: 0.25rem;
+}
+
+.aj-header__cta {
+  display: none;
 }
 
 .aj-nav-link {
@@ -2073,6 +2078,24 @@ h6 {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.98);
   animation: aj-slide-down 0.25s var(--aj-ease) forwards;
+}
+
+@media (min-width: 768px) {
+  .aj-header__nav {
+    display: flex;
+  }
+
+  .aj-header__cta {
+    display: inline-flex;
+  }
+
+  .aj-header__toggle {
+    display: none;
+  }
+
+  .aj-header__mobile {
+    display: none !important;
+  }
 }
 
 @keyframes aj-slide-down {

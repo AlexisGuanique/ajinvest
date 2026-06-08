@@ -24,7 +24,7 @@ export function Header({ locale }: HeaderProps) {
           <BrandLogo />
         </Link>
 
-        <nav className="aj-header__nav hidden md:flex" aria-label="Main">
+        <nav className="aj-header__nav" aria-label="Main">
           {nav.map((item) => (
             <NavLink
               key={item.href}
@@ -36,13 +36,13 @@ export function Header({ locale }: HeaderProps) {
           ))}
         </nav>
 
-        <Link href={contactHref} className="aj-btn aj-btn--primary aj-header__cta hidden md:inline-flex">
+        <Link href={contactHref} className="aj-btn aj-btn--primary aj-header__cta">
           Contact Us
         </Link>
 
         <button
           type="button"
-          className="aj-header__toggle md:hidden"
+          className="aj-header__toggle"
           aria-expanded={open}
           aria-label="Toggle menu"
           onClick={() => setOpen(!open)}
@@ -60,7 +60,7 @@ export function Header({ locale }: HeaderProps) {
       </div>
 
       {open && (
-        <div className="aj-header__mobile md:hidden">
+        <div className="aj-header__mobile">
           <nav className="flex flex-col gap-1" aria-label="Mobile">
             {nav.map((item) => (
               <NavLink
