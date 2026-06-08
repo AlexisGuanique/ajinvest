@@ -16,9 +16,10 @@ export const privacySections: LegalSection[] = [
   {
     title: "Privacy Policy",
     paragraphs: [
-      `Effective Date: ${EFFECTIVE_DATE} | Last Updated: ${EFFECTIVE_DATE}`,
-      `${COMPANY} ("we," "us," or "our") operates ${WEBSITE} and provides third-party logistics (3PL), warehousing, and fulfillment services (collectively, the "Services"). This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use our website or Services.`,
-      "This policy is intended for educational and operational transparency purposes. For legal advice specific to your situation, consult a qualified attorney familiar with applicable privacy laws in your jurisdiction.",
+      `Last Updated: ${EFFECTIVE_DATE}`,
+      `For purposes of this Privacy Policy, each of the terms "we," "us," or "our" means ${COMPANY}, a Florida limited liability company. The term "Services" means, collectively, our third-party logistics (3PL), warehousing, inventory management, order fulfillment, and related business services provided to you online or offline, and the website at ${WEBSITE} through which you have accessed this Privacy Policy.`,
+      `This Privacy Policy describes how we collect, use, and disclose information that relates to or can reasonably be associated with an identified or identifiable living individual or household ("Personal Information"). Personal Information does not include deidentified, aggregated, or publicly available information that cannot reasonably be linked to you.`,
+      `This Privacy Policy does not apply to information collected by third parties (such as payment processors, carriers, or sales platforms you connect to our Services). Your use of our Services is also subject to our Terms of Service. By accessing our website, submitting a contact form, or engaging our Services, you acknowledge having read this Privacy Policy.`,
     ],
   },
   {
@@ -28,29 +29,41 @@ export const privacySections: LegalSection[] = [
     ],
     bullets: [
       "Data Controller: When you visit our website, submit a contact form, request a quote, or sign a service agreement as a business client, we determine how your personal and business information is collected and used.",
-      "Data Processor: When we fulfill orders on behalf of our e-commerce business clients, we process end-user consumer personal data strictly according to the client's instructions, our service agreements, and applicable law. We do not use consumer data for our own marketing purposes.",
+      "Data Processor: When we fulfill orders on behalf of our e-commerce business clients, we process end-user consumer Personal Information strictly according to the client's instructions, our service agreements, and applicable law. We do not use consumer data for our own marketing purposes.",
     ],
   },
   {
-    title: "2. Information We Collect",
+    title: "2. Information We Collect About You",
     paragraphs: [
-      "We collect different categories of information to operate our logistics network effectively:",
+      "We collect several types of Personal Information from and about users of our Services, as described below.",
     ],
   },
   {
-    title: "2A. Information Collected from Business Clients & Website Visitors",
+    title: "2A. Personal Information We Collect Directly from You",
+    paragraphs: [
+      "We may collect Personal Information directly from you in the following situations:",
+    ],
+    bullets: [
+      "When you fill out contact forms, request quotes, or sign up for our Services",
+      "When you communicate with us via email, phone, text, or other means regarding our Services",
+      "When you provide business account details, billing information, or service preferences",
+      "When you deliver inventory to our warehouse facilities or integrate your e-commerce storefront with our systems",
+      "When you participate in surveys, feedback requests, or promotional communications you opt into",
+    ],
+  },
+  {
+    title: "2B. Categories of Direct Information",
     paragraphs: [
       "If you are a business client or website visitor, we may collect:",
     ],
     bullets: [
       "Contact Information: Name, business email address, phone number, and physical billing or corporate address.",
-      "Account & Service Details: Company name, service tier selections, invoicing preferences, and communications related to your 3PL engagement.",
+      "Account & Service Details: Company name, service tier selections, invoicing preferences, inventory SKUs, and communications related to your 3PL engagement.",
       "Payment Information: Payment details processed through PCI-compliant third-party processors such as Stripe. We do not store full credit card numbers on our servers.",
-      "Technical Data: IP address, browser type, device information, and pages visited through cookies and similar technologies.",
     ],
   },
   {
-    title: "2B. Information Processed on Behalf of E-Commerce Consumers",
+    title: "2C. Information Processed on Behalf of E-Commerce Consumers",
     paragraphs: [
       "When we fulfill shipments for our business clients, we may access consumer delivery information synchronized from the client's sales channels. This may include:",
     ],
@@ -61,74 +74,115 @@ export const privacySections: LegalSection[] = [
     ],
   },
   {
-    title: "2C. Automated Technical Data",
+    title: "2D. Personal Information We Collect Automatically",
     paragraphs: [
-      "Like most websites, we automatically collect certain technical information to maintain security and improve performance, including log files, session data, and cookie identifiers.",
+      "We may collect information about your device and browsing activity automatically through technical methods, including:",
+    ],
+    bullets: [
+      "Usage Details & IP Address: Traffic data, log files, pages visited, browser type, operating system, device information, and IP address collected as you navigate our website.",
+      "Cookies: Small data files stored on your device to maintain session preferences and basic functionality. Most browsers allow you to refuse or delete cookies; disabling cookies may limit certain website features.",
+      "Web Beacons: Electronic tags that help us understand general usage patterns and whether emails or pages have been viewed.",
     ],
   },
   {
-    title: "3. How We Use Your Information",
+    title: "3. How We Use Your Personal Information",
     paragraphs: [
-      "We use collected information strictly for logistics operations and legitimate business purposes:",
+      "We use Personal Information for logistics operations and legitimate business purposes, including to:",
     ],
     bullets: [
-      "Fulfilling, packing, sorting, and routing physical product shipments",
-      "Generating shipping labels and coordinating carrier pickup and delivery",
-      "Managing client accounts, invoicing, billing, and customer support",
-      "Responding to contact form submissions and service inquiries",
-      "Securing our digital systems and licensed warehouse operations against fraud or unauthorized access",
-      "Complying with legal, tax, and regulatory obligations",
+      "Fulfill, pack, sort, and route physical product shipments and coordinate carrier pickup and delivery",
+      "Respond to contact form submissions, service inquiries, and customer support requests",
+      "Manage client accounts, generate invoices, process payments, and enforce billing terms",
+      "Verify information you provide and prevent transactional fraud",
+      "Improve our website, Services, and operational workflows",
+      "Send service-related communications, including account updates, billing notices, and operational alerts",
+      "Send promotional materials or newsletters only where you have opted in or where permitted by law",
+      "Secure our digital systems and warehouse operations against unauthorized access or fraud",
+      "Comply with legal, tax, regulatory, and contractual obligations",
+      "Enforce our Terms of Service, service agreements, and other applicable policies",
+      "Protect the rights, property, or safety of our company, clients, staff, and partners",
     ],
   },
   {
-    title: "4. Data Sharing and Disclosure",
+    title: "4. Disclosure of Personal Information",
     paragraphs: [
-      "We do not sell, rent, or trade personal data to third-party marketers. We do not use end-user consumer data for external advertising. We share information only with partners essential to completing logistics services:",
+      "We do not sell, rent, or trade Personal Information to third-party marketers. We do not use end-user consumer data for external advertising. We may disclose Personal Information in the following circumstances:",
     ],
     bullets: [
+      "Service Providers: Cloud hosting, warehouse management software, payment processors (including Stripe), analytics tools, and vendors that support our operations under confidentiality obligations.",
       "Shipping Carriers: Recipient delivery details shared with carriers such as FedEx, UPS, DHL, USPS, and regional freight providers to execute physical delivery.",
-      "Service Providers: Cloud hosting, warehouse management software, payment processors (including Stripe), and analytics tools that support our infrastructure under confidentiality obligations.",
       "Licensed Warehouse Partners: Operational data necessary to receive, store, and ship inventory at third-party fulfillment facilities.",
-      "Legal Requirements: When required by law, court order, subpoena, or to protect the rights, safety, and property of our clients, staff, and partners.",
+      "Authorized Agents: To persons you authorize to receive your information on your behalf (such as your attorney or designated account contact).",
+      "Legal Requirements: When required by law, court order, subpoena, or regulatory agency, or when we believe disclosure is necessary to protect rights, safety, or property.",
+      "Business Transfers: In connection with a merger, acquisition, reorganization, bankruptcy, or sale of assets, Personal Information may be transferred as part of that transaction.",
     ],
   },
   {
     title: "5. Data Security & Retention",
     paragraphs: [
-      "We implement industry-standard physical, administrative, and technical safeguards—including SSL encryption for website communications and access controls at warehouse facilities—to protect data against unauthorized access, alteration, or disclosure.",
-      "We retain personal and business data only as long as necessary to fulfill active service agreements, maintain transaction and fulfillment records, resolve disputes, and satisfy legal or audit obligations. Retention periods vary based on the type of data and contractual requirements.",
+      "We implement industry-standard physical, administrative, and technical safeguards—including SSL encryption for website communications and access controls at warehouse facilities—to protect Personal Information against unauthorized access, alteration, or disclosure.",
+      "We retain Personal Information only as long as necessary to fulfill active service agreements, maintain transaction and fulfillment records, resolve disputes, and satisfy legal or audit obligations. Retention periods vary based on the type of data and contractual requirements.",
     ],
   },
   {
-    title: "6. Cookies & Tracking Technologies",
+    title: "6. Cookies, Tracking & Your Choices",
     paragraphs: [
-      "Our website may use essential cookies required for basic functionality and analytics cookies to understand how visitors interact with our pages. You can control cookie preferences through your browser settings. Disabling certain cookies may affect website functionality.",
-    ],
-  },
-  {
-    title: "7. Your Privacy Rights",
-    paragraphs: [
-      "Depending on your location (including California under the CCPA/CPRA, or the European Economic Area under GDPR), you or your end consumers may have the following rights:",
+      "Our website may use essential cookies required for basic functionality and analytics cookies to understand how visitors interact with our pages.",
     ],
     bullets: [
-      "Access & Portability: Request a copy of personal data we hold about you.",
+      "Cookies: You can control cookie preferences through your browser settings. Disabling certain cookies may affect website functionality.",
+      "Email Communications: If you receive promotional emails from us, you may opt out using the unsubscribe link in any such message. Service-related emails (billing, account updates, fulfillment notices) are not subject to marketing opt-out.",
+      "Do Not Sell: We do not sell Personal Information. We do not engage in cross-context behavioral advertising using consumer fulfillment data.",
+    ],
+  },
+  {
+    title: "7. Links to Third-Party Websites",
+    paragraphs: [
+      "Our website and communications may contain links to third-party websites or services (such as payment processors or carrier tracking pages) that are beyond our control. We are not responsible for the privacy practices or content of those third parties. We encourage you to review the privacy policies of any third-party site before providing Personal Information.",
+    ],
+  },
+  {
+    title: "8. Information You Disclose to Third Parties",
+    paragraphs: [
+      "If you connect third-party sales platforms, payment tools, or other services to our fulfillment operations, information you share with those third parties is governed by their own privacy policies. We are not responsible for how those third parties collect, use, or disclose your information.",
+    ],
+  },
+  {
+    title: "9. Your Privacy Rights",
+    paragraphs: [
+      "Depending on your location (including California under the CCPA/CPRA, or the European Economic Area under GDPR), you may have the following rights regarding Personal Information we hold about you:",
+    ],
+    bullets: [
+      "Access & Portability: Request a copy of Personal Information we hold about you.",
       "Correction: Request correction of inaccurate or incomplete information.",
-      "Deletion: Request deletion of personal information, subject to legal and contractual retention requirements.",
+      "Deletion: Request deletion of Personal Information, subject to legal and contractual retention requirements.",
       "Opt-Out: Opt out of non-essential cookies or promotional communications where applicable.",
       "Restrict Processing: Request limitation of how we use your data in certain circumstances.",
     ],
   },
   {
-    title: "8. California Privacy Rights (CCPA/CPRA)",
+    title: "10. Exercising Your Rights",
     paragraphs: [
-      "California residents may have additional rights including the right to know what personal information is collected, the right to delete personal information, and the right to opt out of the sale or sharing of personal information. A & J Invest Group LLC does not sell personal information.",
-      "To submit a verifiable consumer request, contact us using the information in Section 9 below.",
+      "To exercise any privacy right that applies to you, contact us using the information in Section 12 below. We may request additional information to verify your identity before completing your request. We will respond within the timeframes required by applicable law. If we deny a request, we will explain why. Where applicable law provides a right to appeal, you may respond to our denial stating that you wish to appeal our decision.",
     ],
   },
   {
-    title: "9. Contact Information",
+    title: "11. California Privacy Rights (CCPA/CPRA)",
     paragraphs: [
-      `For questions regarding this Privacy Policy or our data handling practices:`,
+      "California residents may have additional rights including the right to know what Personal Information is collected, the right to delete Personal Information, and the right to opt out of the sale or sharing of Personal Information.",
+      `${COMPANY} does not sell Personal Information and does not share Personal Information for cross-context behavioral advertising. To submit a verifiable consumer request, contact us using the information in Section 12 below.`,
+    ],
+  },
+  {
+    title: "12. Operation of Our Services in the United States",
+    paragraphs: [
+      "Our Services are operated in the United States. If you are located outside the United States, be aware that any Personal Information you provide to us may be transferred to and processed in the United States. By using our Services or providing us with your information, you consent to this transfer.",
+    ],
+  },
+  {
+    title: "13. Contact Information",
+    paragraphs: [
+      `For questions regarding this Privacy Policy, to exercise your privacy rights, or to inquire about our data handling practices:`,
       `Company Name: ${COMPANY}`,
       `Email: ${EMAIL}`,
       `Phone: ${PHONE}`,
@@ -136,9 +190,9 @@ export const privacySections: LegalSection[] = [
     ],
   },
   {
-    title: "10. Changes to This Policy",
+    title: "14. Changes to This Privacy Policy",
     paragraphs: [
-      `We may update this Privacy Policy from time to time. The revised version will be posted on this page with an updated effective date. Continued use of our website or Services after changes constitutes acceptance of the updated policy.`,
+      `We may amend this Privacy Policy at any time. Amendments take effect when posted on this page with an updated date. Your continued use of our website or Services after changes constitutes acknowledgment of the updated policy. We encourage you to review this page periodically.`,
     ],
   },
 ];
