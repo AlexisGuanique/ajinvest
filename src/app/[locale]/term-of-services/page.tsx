@@ -7,7 +7,7 @@ import type { Locale } from "@/lib/locales";
 type PageProps = { params: Promise<{ locale: string }> };
 
 export const metadata: Metadata = {
-  title: "Term of Services",
+  title: "3PL Terms of Service",
 };
 
 export default async function TermsPage({ params }: PageProps) {
@@ -17,7 +17,7 @@ export default async function TermsPage({ params }: PageProps) {
     <LegalPage
       locale={locale as Locale}
       hero={pageHeroes.terms}
-      title="Terms of Service"
+      title="3PL Terms of Service"
       sections={termsSections}
     />
   );

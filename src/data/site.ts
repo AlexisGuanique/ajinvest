@@ -116,7 +116,7 @@ export const pageHeroes = {
     title: "Privacy Policy",
   },
   terms: {
-    title: "Terms of Service",
+    title: "3PL Terms of Service",
   },
   refund: {
     title: "Refund Policy",
@@ -135,7 +135,7 @@ export const homeContent = {
     eyebrow: "Why Choose Us",
     title: "Trusted 3PL Partner for E-Commerce Sellers",
     description:
-      "We operate fulfillment services at licensed third-party warehouse facilities, providing B2B logistics support to marketplace sellers across the United States.",
+      "We operate fulfillment services at licensed third-party warehouse facilities, providing B2B logistics support to online sellers across the United States.",
     image:
       "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
     imageAlt: "Modern warehouse with shipping operations",
@@ -155,9 +155,9 @@ export const homeContent = {
       icon: "warehouse",
     },
     {
-      title: "Marketplace Expertise",
+      title: "Multi-Channel Expertise",
       description:
-        "Specialized experience with Walmart Marketplace, eBay, and other e-commerce platforms.",
+        "Specialized experience with online retail platforms and multi-channel e-commerce operations.",
       icon: "marketplace",
     },
     {
@@ -172,30 +172,35 @@ export const homeContent = {
     items: [
       {
         quote:
-          "A & J Invest Group streamlined our Walmart fulfillment operations. Their team handles receiving, pick-and-pack, and outbound shipping with full tracking documentation.",
-        name: "Marketplace Seller",
-        role: "Walmart Marketplace Client",
-        image:
-          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
-        imageAlt: "Client testimonial",
+          "I had a really good experience with A & J Invest Group here in Orlando. From the first call their team was profesional, patient, and always kept me updated on my inventory. They handle our weekly warehousing and the whole process feels organized — not stressful like it was before. Its hard to find a 3PL that actually picks up the phone when you need them, but they do. I would recomend them to any seller trying to scale their online business.",
+        name: "Deborah Bolivar",
+        role: "E-Commerce Seller, Orlando FL",
+        image: "/images/testimonials/deborah-bolivar.png",
+        imageAlt: "Deborah Bolivar, e-commerce seller",
       },
       {
         quote:
-          "Their inventory coordination service helped us optimize SKU placement and reduce stockouts. Professional, responsive, and reliable B2B partner.",
-        name: "E-Commerce Operator",
-        role: "eBay Seller",
-        image:
-          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-        imageAlt: "Client testimonial",
+          "Working with A & J has been smooth honestly. We started with the filling service fee for batches and everything arrived labeled right, tracking sent same day. Their team knows the process and doesnt guess — they just execute. Customer service is solid, they answer emails fast even on weekends sometimes. If your looking for fulfillment support in Orlando this is a good option.",
+        name: "Enmanuel Franco",
+        role: "E-Commerce Seller, Orlando FL",
+        image: "/images/testimonials/enmanuel-franco.png",
+        imageAlt: "Enmanuel Franco, e-commerce seller",
       },
       {
         quote:
-          "The logistics consulting engagement gave us a clear roadmap for carrier selection and cost-per-unit optimization. Highly recommended for growing sellers.",
-        name: "Business Owner",
-        role: "Consulting Client",
-        image:
-          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-        imageAlt: "Client testimonial",
+          "A & J Invest Group helped us alot with our 3PL setup. We signed up for the premium weekly package and the diference was noticeable within the first two weeks — faster receiving, cleaner reports, less back and forth with carriers. They treat the relationship like a partnership not just a vendor invoice. Very trusthworthy team, I'd work with them again without thinking twice.",
+        name: "Eberths Salas",
+        role: "E-Commerce Seller, Orlando FL",
+        image: "/images/testimonials/eberths-salas.png",
+        imageAlt: "Eberths Salas, e-commerce seller",
+      },
+      {
+        quote:
+          "Great experience overall with A & J Invest Group LLC. I was managing orders alone and it was getting chaotic, they stepped in for business operations support and made everything more simple. Communication is clear, invoices match what we agreed on, no surprises. Rare to find people who actually care about your business but these guys definately do. Highly recomend.",
+        name: "Luis Rondón",
+        role: "E-Commerce Seller, Orlando FL",
+        image: "/images/testimonials/luis-rondon.png",
+        imageAlt: "Luis Rondón, e-commerce seller",
       },
     ] satisfies Testimonial[],
   },
@@ -220,7 +225,7 @@ export const serviceTiers: ServiceTier[] = [
     billingCycle: "Weekly",
     stripeLabel: 'Stripe: "Weekly warehousing service"',
     description:
-      "Secure, weekly warehousing and inventory storage coordination at licensed third-party facilities. Ideal for marketplace sellers needing flexible, no-contract storage management.",
+      "Secure, weekly warehousing and inventory storage coordination at licensed third-party facilities. Ideal for online sellers needing flexible, no-contract storage management.",
     price: "$500/ week",
     priceNote: "Entry tier starts at $250/week based on volume",
     includes: [
@@ -256,14 +261,14 @@ export const serviceTiers: ServiceTier[] = [
     billingCycle: "Weekly",
     stripeLabel: 'Stripe: "Premium One week Package" / "Premium 3pl package"',
     description:
-      "Our most in-demand weekly service tier. Combines warehousing, fulfillment, and priority handling into one fixed weekly fee. Suited for active marketplace sellers with consistent order volume.",
+      "Our most in-demand weekly service tier. Combines warehousing, fulfillment, and priority handling into one fixed weekly fee. Suited for active online sellers with consistent order volume.",
     price: "$318/ week",
     priceNote: "Premium monthly rate: $1,130/month",
     includes: [
       "Priority inbound receiving within 24 hrs",
       "Pick, pack, and label — unlimited orders",
       "Dedicated account coordination",
-      "Walmart & eBay marketplace shipment compliance",
+      "Online platform shipment compliance",
       "Weekly performance and inventory report",
     ],
     ctaLabel: "Get Started",
@@ -361,7 +366,7 @@ export const servicesContent = {
     items: [
       "169+ successful B2B transactions with zero disputes and zero chargebacks",
       "Licensed third-party warehouse facilities — asset-light, industry-standard model",
-      "Specialized marketplace fulfillment for Walmart, eBay, and other platforms",
+      "Specialized fulfillment support for online retail and multi-channel sellers",
       "Transparent weekly and monthly retainer invoicing with clear service descriptions",
       "Florida-registered LLC with established operational history since 2023",
       "Dedicated account management and responsive client support",
@@ -374,7 +379,7 @@ export const aboutContent = {
   intro: {
     title: "About A & J Invest Group LLC",
     paragraphs: [
-      "A & J Invest Group LLC is a Florida-registered third-party logistics (3PL) service provider founded in 2023. We serve e-commerce businesses and marketplace sellers with fulfillment, inventory management, and warehouse consulting services.",
+      "A & J Invest Group LLC is a Florida-registered third-party logistics (3PL) service provider founded in 2023. We serve e-commerce businesses and online sellers with fulfillment, inventory management, and warehouse consulting services.",
       "We operate fulfillment services at licensed third-party warehouse facilities. Our asset-light operating model is standard practice for 3PL operators of our scale, allowing us to provide flexible, cost-effective logistics solutions without the overhead of owned warehouse infrastructure.",
       "Our administrative office is located at our registered business address in Orlando, FL. We charge clients at the time of service delivery or on a recurring weekly/monthly retainer basis as agreed with each client.",
     ],
@@ -398,7 +403,7 @@ export const aboutContent = {
     {
       title: "Expertise",
       description:
-        "Deep knowledge of Walmart Marketplace, eBay, and multi-channel fulfillment workflows.",
+        "Deep knowledge of multi-channel fulfillment workflows and online retail operations.",
     },
     {
       title: "Partnership",
@@ -468,7 +473,7 @@ export const blogContent = {
   posts: [
     {
       slug: "3pl-fulfillment-basics",
-      title: "Understanding 3PL Fulfillment for Marketplace Sellers",
+      title: "Understanding 3PL Fulfillment for Online Sellers",
       status: "Coming Soon",
       image: {
         src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop",
@@ -476,8 +481,8 @@ export const blogContent = {
       },
     },
     {
-      slug: "walmart-marketplace-logistics",
-      title: "Walmart Marketplace Fulfillment Best Practices",
+      slug: "online-fulfillment-best-practices",
+      title: "Online Fulfillment Best Practices for Growing Sellers",
       status: "Coming Soon",
       image: {
         src: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop",

@@ -2538,6 +2538,107 @@ h6 {
   gap: 2rem;
 }
 
+/* Testimonials carousel */
+.aj-testimonials-carousel {
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+.aj-testimonials-carousel__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.aj-testimonials-carousel__arrow {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  border: 2px solid var(--brz-gray-border);
+  background: var(--brz-white);
+  color: var(--aj-primary);
+  cursor: pointer;
+  transition:
+    background var(--aj-duration) var(--aj-ease),
+    border-color var(--aj-duration) var(--aj-ease),
+    color var(--aj-duration) var(--aj-ease),
+    transform var(--aj-duration) var(--aj-ease-spring),
+    box-shadow var(--aj-duration) var(--aj-ease);
+}
+
+.aj-testimonials-carousel__arrow:hover {
+  background: var(--aj-accent);
+  border-color: var(--aj-accent);
+  color: var(--brz-white);
+  transform: scale(1.06);
+  box-shadow: var(--aj-shadow-accent);
+}
+
+.aj-testimonials-carousel__arrow:active {
+  transform: scale(0.97);
+}
+
+.aj-testimonials-carousel__viewport {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.aj-testimonials-carousel__track {
+  display: flex;
+  transition: transform 0.65s var(--aj-ease);
+  will-change: transform;
+}
+
+.aj-testimonials-carousel__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding: 0 0.25rem;
+}
+
+.aj-testimonial--slide {
+  min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aj-testimonials-carousel__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.aj-testimonials-carousel__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  border: none;
+  padding: 0;
+  background: var(--brz-gray-border);
+  cursor: pointer;
+  transition:
+    background var(--aj-duration) var(--aj-ease),
+    transform var(--aj-duration) var(--aj-ease-spring),
+    width var(--aj-duration) var(--aj-ease);
+}
+
+.aj-testimonials-carousel__dot:hover {
+  background: rgba(233, 69, 96, 0.45);
+  transform: scale(1.15);
+}
+
+.aj-testimonials-carousel__dot--active {
+  width: 1.75rem;
+  background: var(--aj-accent);
+}
+
 .aj-testimonial {
   background: var(--brz-white);
   border: 1px solid var(--brz-gray-border);
@@ -2584,11 +2685,13 @@ h6 {
 
 .aj-testimonial__avatar {
   position: relative;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
+  border: 2px solid rgba(233, 69, 96, 0.2);
+  box-shadow: var(--aj-shadow-sm);
 }
 
 .aj-testimonial__name {
@@ -3048,6 +3151,56 @@ h6 {
   }
 }
 
+/* Legal pages */
+.aj-legal-page__inner {
+  max-width: 48rem;
+}
+
+.aj-legal-page__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aj-legal-page__heading {
+  font-family: var(--font-poppins), Poppins, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--aj-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.aj-legal-page__text {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--brz-gray-muted);
+  margin-bottom: 0.75rem;
+}
+
+.aj-legal-page__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.aj-legal-page__list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aj-legal-page__list li {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--brz-gray-dark);
+  padding-left: 0.25rem;
+}
+
+.aj-legal-page__list li::marker {
+  color: var(--aj-accent);
+}
+
 /* Section reveal animation */
 .aj-section {
   animation: aj-section-in 0.6s var(--aj-ease) forwards;
@@ -3294,6 +3447,14 @@ h6 {
   .aj-service-card:hover,
   .aj-testimonial:hover,
   .aj-tier-card:hover {
+    transform: none !important;
+  }
+
+  .aj-testimonials-carousel__track {
+    transition: none !important;
+  }
+
+  .aj-testimonials-carousel__arrow:hover {
     transform: none !important;
   }
 }
